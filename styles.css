@@ -1,0 +1,329 @@
+/*
+1. Posicionamiento
+2. Modelo caja
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
+:root {
+    /* Colores */
+    --black: #181818; 
+    --white: #F2F2F2; 
+    --purple: #8758FF; 
+    --blue: #5CB8E4; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 280px;
+    height: 500px;
+    text-align: center;
+    background: linear-gradient(207.8deg, var(--black) 16.69%, var(--blue) 100%);
+}
+
+header img {
+    height: 40%;
+    margin-top: 60px;
+    align-self: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px var(--black) ;
+}
+
+.header--title-container {
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title-container h1 {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 4.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+
+.header--title-container p {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 115px);
+    top: 270px;
+    display: block;
+    margin-top: 200px;
+    padding: 15px;
+    width: 230px;
+    height: 48px;
+    background-color: var(--white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px gray;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/down-arrow.svg");
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: justify ;
+}
+
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 256px;
+    height: 256px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-image: url("./assets/imgs/programacion.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container--span {
+    color: var(--blue);
+}
+
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--black);
+}
+
+.main-exchange-container a {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--purple);
+}
+
+.main-technologies {
+    position: relative;
+    width: 100%;
+    min-width: 280px;
+    height: auto;
+    padding: 20px 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/imgs/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px var(--black);
+   /* background-color: #201e1c;*/
+}
+
+.technologies-detail--title {
+    width: 90%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.technologies-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blue);
+}
+
+.technologies-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+
+.technologies-cards--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.technologies-detail--card {
+    width: 120px;
+    height: 160px;
+    margin: 15px;
+    padding: 15px;
+    background-color: /*rgb(37, 37, 37)*/ rgb(206, 206, 206);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px var(--black);
+}
+
+.technologies--card-title {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.technologies-detail--card .javascript {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 10 px;
+    margin: auto;
+    background-image: url(/assets/icons/javascript.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.technologies-detail--card .html {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 10 px;
+    margin: auto;
+    background-image: url(/assets/icons/html.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.technologies-detail--card .css {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 10 px;
+    margin: auto;
+    background-image: url(/assets/icons/css.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.technologies-detail--card .python {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 10 px;
+    margin: auto;
+    background-image: url(/assets/icons/python.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.technologies-detail--card .git {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 10 px;
+    margin: auto;
+    background-image: url(/assets/icons/git.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.technologies-detail--card .github {
+    display: inline-block;
+    width: 90px;
+    min-height: 90px;
+    margin-bottom: 10 px;
+    margin: auto;
+    background-image: url(/assets/icons/github.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #201e1c;
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer .right h2 {
+    font-size: 2.4rem;
+    font-family: 'Comforter Brush', cursive;
+    color: var(--blue);
+}
