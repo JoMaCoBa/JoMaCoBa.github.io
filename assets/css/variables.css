@@ -1,0 +1,19 @@
+:root {
+    /* Colors */
+    --fucsia: #c64c9f;
+    --yellow-hard: #fec901;
+    --gold: #ff9728;
+    --yellow: #ffd203; 
+    --yellow-low: #f1f232;
+    --red-low: #e24330;
+    --orange-low: #fe5a35;
+    --pink: #ff91e8;
+    --pink-low: #fea8e7;
+    --cyan: #22a094;
+    --green-low: #06ae56;
+    --sky-blue: #91a8ec;
+
+    /* Colors Essentials */
+    --background-color: #f9f5f2;
+    --font-color: #282825;
+}
