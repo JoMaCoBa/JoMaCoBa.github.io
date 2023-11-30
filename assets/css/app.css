@@ -44,6 +44,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     text-align: justify;
+    color: #52514e;
 }
 
 .text__title {
@@ -98,3 +99,33 @@ body {
     pointer-events: none;
 }
 
+.about {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.about__container {
+    margin: 0 30px;
+
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.about__title {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+}
+
+.about__description {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: .1px;
+    padding-bottom: 30px;
+    color: #52514e;
+}
+
+.description__link {
+    color: var(--font-color);
+    text-decoration: underline;
+}

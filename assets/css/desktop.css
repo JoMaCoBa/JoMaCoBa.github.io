@@ -1,10 +1,12 @@
 .header {
+    display: grid;
+    place-content: center;
     height: 500px;
 }
 
 .header__columns {
-    max-width: 1200px;
-    min-width: 600px;
+    width: 100%;
+    min-width: 300px;
     margin: 20px auto;
     flex-direction: row;
 }
@@ -29,9 +31,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 450px;
 }
 
 .right__img {
     width: 270px;
     height: 270px;
 }
+
+.about {
+    display: grid;
+    place-content: center;
+
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+
+    margin-top: 0px;
+}
+
+.about__container {
+    display: grid;
+    place-content: center;
+
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+
+
