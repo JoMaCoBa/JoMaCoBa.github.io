@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin');
 @import url(./variables.css);
 
 * {
@@ -10,4 +11,90 @@
 
 body {
     background-color: var(--background-color);
+    font-family: 'Cabin', sans-serif;
+    color: var(--font-color);
 }
+
+.header {
+    width: 100%;
+    min-width: 300px;
+}
+
+.header__columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.left__text {
+    line-height: 1.4;
+}
+
+.text__presentation {
+    margin-bottom: 12px;
+
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text__title {
+    min-width: 330px;
+    margin-bottom: 12px;
+
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.left__button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 48px;
+    width: 90%;
+    margin-top: 12px;
+
+    border-radius: 50px;
+    border: 1px solid var(--font-color);
+    background-color: #f7cb45;
+    box-shadow: 3px 3px 0 0 var(--font-color);
+
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--font-color);
+
+    cursor: pointer;
+}
+
+.header__right {
+    width: 100%;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.right__img {
+    width: 100%;
+
+    border-radius: 6px;
+    border: 1px solid var(--font-color);
+    box-shadow: 3px 3px 0 0 var(--font-color);
+
+    pointer-events: none;
+}
+
